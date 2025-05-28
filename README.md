@@ -26,10 +26,188 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 ## PROGRAM :
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('image.avif') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .menu-item img {
+            height: 200px; /* Increased height for better visibility */
+            object-fit: cover;
+            margin: 0 auto; /* Center the images */
+            display: block; /* Ensure images are block elements */
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+        }
+        .menu-section {
+            background-color: #f8f9fa; /* Light background for the menu section */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Delicious Eats</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="2.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Delicious Eats</h1>
+        <p>Experience the best food in town!</p>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 menu-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Menu</h2>
+            <div class="row g-4">
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy.png" class="card-img-top" alt="Dish 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Grilled Chicken</h5>
+                            <p class="card-text">Juicy grilled chicken served with fresh vegetables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 2.png" class="card-img-top" alt="Dish 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta Primavera</h5>
+                            <p class="card-text">Delicious pasta tossed with seasonal vegetables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 3.png" class="card-img-top" alt="Dish 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Burger</h5>
+                            <p class="card-text">Our signature burger with fresh ingredients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 4.png" class="card-img-top" alt="Dish 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Caesar Salad</h5>
+                            <p class="card-text">Crisp romaine lettuce with Caesar dressing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 5.png" class="card-img-top" alt="Dish 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita Pizza</h5>
+                            <p class="card-text">Wood-fired pizza topped with fresh mozzarella.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 6.png" class="card-img-top" alt="Dish 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisu</h5>
+                            <p class="card-text">Classic Italian dessert with coffee and mascarpone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 7.png" class="card-img-top" alt="Dish 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Steak Frites</h5>
+                            <p class="card-text">Grilled steak served with crispy fries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 8.png" class="card-img-top" alt="Dish 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Seafood Paella</h5>
+                            <p class="card-text">Spanish-style rice with fresh seafood.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <div class="card">
+                        <img src="image copy 9.png" class="card-img-top" alt="Dish 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Cheesecake</h5>
+                            <p class="card-text">Creamy cheesecake with a graham cracker crust.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">At Delicious Eats, we believe in serving fresh, high-quality food made with love. Established in 2020, we have been a favorite spot for locals and tourists alike. Come and enjoy our cozy atmosphere, exceptional service, and a menu crafted with passion.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <p class="text-center">Have questions or want to make a reservation? Reach out to us!</p>
+            <p class="text-center">Phone: 123-456-7890 | Email: info@deliciouseats.com</p>
+            <p class="text-center">Address: 123 Main Street, Foodie City, FC 12345</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center p-3">
+        <p>&copy; 2024 HARISH G 212224110020</p>
+    </footer>
+</body>
+</html>
+```
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-05-26 144650-1-1.png>)
+
 ![alt text](<Screenshot 2025-05-26 144717.png>)
 ![alt text](<Screenshot 2025-05-26 144736.png>)
 ![alt text](<Screenshot 2025-05-26 144750.png>)
